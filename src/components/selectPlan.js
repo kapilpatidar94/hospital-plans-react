@@ -2,9 +2,8 @@ import React, { Component } from "react";
 
 class SelectPlan extends Component {
   superPlan = event => {
-    console.log("super");
     let basicProp =
-      event.target.parentNode.parentNode.parentNode.parentNode.nextSibling;
+    event.target.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling;
     let advanceProp = basicProp.nextSibling;
     let targetStyle = advanceProp.nextSibling;
     targetStyle.style.zIndex = "2";
@@ -13,7 +12,7 @@ class SelectPlan extends Component {
   };
   advancedPlan = event => {
     let basicProp =
-      event.target.parentNode.parentNode.parentNode.parentNode.nextSibling;
+    event.target.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling;
     let targetStyle = basicProp.nextSibling;
     let superProp = targetStyle.nextSibling;
     targetStyle.style.zIndex = "2";
@@ -21,10 +20,16 @@ class SelectPlan extends Component {
     superProp.style.zIndex = "0";
   };
   basicPlan = event => {
-    console.log("basic");
-    let targetStyle =
-      event.target.parentNode.parentNode.parentNode.parentNode.nextSibling;
-    let advanceProp = targetStyle.nextSibling.nextSibling;
+    // let targetStyle =
+    //   event.target.parentNode.parentNode.parentNode.parentNode.nextSibling;
+    // let advanceProp = targetStyle.nextSibling.nextSibling;
+    // let superProp = targetStyle.nextSibling;
+    // targetStyle.style.zIndex = "2";
+    // advanceProp.style.zIndex = "0";
+    // superProp.style.zIndex = "0";
+    // console.log(event.target.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling);
+    let targetStyle = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.nextSibling;
+    let advanceProp = targetStyle.nextSibling;
     let superProp = targetStyle.nextSibling;
     targetStyle.style.zIndex = "2";
     advanceProp.style.zIndex = "0";
@@ -34,14 +39,15 @@ class SelectPlan extends Component {
   render() {
     return (
       <div className="hospital-items">
-        <div className="left-item">Select Plan Values apply</div>
-        <input
+        <div className="left-item">Select Plan Values apply ➔</div>
+        {/* <input
           className="radio-button"
           type="radio"
           name="choose"
           value="basic"
           onClick={this.basicPlan}
         />
+
         <input
           className="radio-button"
           type="radio"
@@ -55,7 +61,19 @@ class SelectPlan extends Component {
           name="choose"
           value="super"
           onClick={this.superPlan}
-        />
+        /> */}
+        <label class="container blue-container">
+          <input type="radio" name="radio" onClick={this.basicPlan}/>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container yellow-container">
+          <input type="radio" name="radio" onClick={this.advancedPlan}/>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container green-container">
+          <input type="radio" name="radio" onClick={this.superPlan} />
+          <span class="checkmark"></span>
+        </label>
       </div>
     );
   }

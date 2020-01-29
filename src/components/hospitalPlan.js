@@ -6,7 +6,7 @@ class HospitalPlans extends Component {
       <div className="categories">
         <div className="categories-item basic">Basic</div>
         <div className="categories-item advanced">Advanced</div>
-        <div className="categories-item super">Super</div>
+        <div className="categories-item super">Superior</div>
       </div>
     );
   }

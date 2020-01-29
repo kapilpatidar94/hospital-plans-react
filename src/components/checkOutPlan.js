@@ -6,13 +6,13 @@ class PlansList extends Component {
     return (
       <div className="item-area">
         <div className="hospital-items">
-          <div className="left-item">What you pay →</div>
+          <div className="left-item">What you pay ➔</div>
           <div className="basic-item">0.8</div>
           <div>1.1</div>
           <div>1.2</div>
         </div>
         <div className="hospital-items">
-          <div className="left-item">Protection </div>
+          <div className="left-item">Protection ➔</div>
           <div className="basic-item">80</div>
           <div>100</div>
           <div>120</div>
