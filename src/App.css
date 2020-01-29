@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+.mobile-view {
+  background: linear-gradient(to bottom, #339966 50%, #6699ff 100%);
+  width: 400px;
+  height: 630px;
+}
+.close {
+  font-weight: bold;
+  position: relative;
+  float: left;
+  margin: 10px 0px 0px 20px;
+  cursor: pointer;
+}
+.choose-range {
+  margin-top: 50px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.categories {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  margin-top: 14px;
+}
+.categories-item {
+  margin: 10px;
+  font-weight: bolder;
+}
+.basic {
+  color: lightblue;
+}
+.advanced {
+  color: rgb(241, 241, 64);
+}
+.super {
+  color: #0bf80b;
+}
+.hospital-items {
+  display: grid;
+  grid-template-columns: 1.25fr repeat(3, 0.75fr);
+  margin-top: 10px;
+  font-weight: bold;
+  position: relative;
+}
+.left-item {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 4px;
+  width: 120px;
+}
+.highlighted {
+  background-color: lightcyan;
+  color: black;
+  border-radius: 20px;
+  z-index: 1;
+}
+.item-area {
+  width: 380px;
+  margin-left: 14px;
+}
+
+.radio-button {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.check-out {
+  margin-top: 20px;
+  padding: 20px 40px 20px 40px;
+  font-size: 20px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px white solid;
+  color: aliceblue;
+  font-weight: bold;
+}
+.blue-area,
+.yellow-area,
+.green-area {
+  position: absolute;
+  border-radius: 30px;
+  height: 380px;
+  width: 60px;
+  margin-top: 30px;
+  margin-left: -3px;
+}
+.blue-area {
+  border: 3px solid rgb(50, 139, 223);
+  border-radius: 30px;
+  background-color: skyblue;
+  opacity: 0.5;
+}
+.yellow-area {
+  margin-left: 78px;
+  border: 3px solid yellow;
+  background-color: rgb(204, 204, 61);
+  opacity: 0.5;
+}
+.green-area {
+  margin-left: 158px;
+  border: 3px solid green;
+  background-color: greenyellow;
+  opacity: 0.5;
 }
