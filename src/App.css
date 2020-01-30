@@ -95,6 +95,9 @@
   border-radius: 20px;
   z-index: 1;
 }
+.first-two {
+  z-index: 1;
+}
 .item-area {
   width: 380px;
   margin-left: 14px;
@@ -129,7 +132,7 @@
   position: absolute;
   border-radius: 30px;
   height: 380px;
-  width: 60px;
+  width: 54px;
   margin-top: 30px;
   margin-left: -3px;
 }
@@ -152,7 +155,6 @@
   opacity: 0.5;
 }
 
-
 /* ************************* */
 .container {
   display: block;
@@ -167,66 +169,58 @@
   z-index: 3;
 }
 
-/* Hide the browser's default radio button */
 .container input {
   position: absolute;
   opacity: 0;
-  /* cursor: pointer; */
+  display: none;
 }
 
-/* Create a custom radio button */
 .checkmark {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
   height: 35px;
   width: 35px;
   background-color: #eee;
   border-radius: 50%;
 }
 
-
-
-/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #eee;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .blue-container .checkmark:after {
   top: 5px;
   left: 5px;
   width: 26px;
   height: 26px;
-	border-radius: 50%;
-	background: skyblue;
+  border-radius: 50%;
+  background: skyblue;
 }
 
 .yellow-container .checkmark:after {
   top: 5px;
-  left: 5px;
+  left: 4px;
   width: 26px;
   height: 26px;
- border-radius: 50%;
- background: yellow;
+  border-radius: 50%;
+  background: yellow;
 }
 .green-container .checkmark:after {
   top: 5px;
- left: 5px;
- width: 26px;
- height: 26px;
- border-radius: 50%;
- background: green;
+  left: 5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: green;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import HospitalPlans from "./components/hospitalPlan";
-import PlansList from "./components/checkOutPlan";
+import PlansList from "./components/PlansList";
 
 class App extends Component {
   render() {
@@ -20,9 +20,9 @@ class App extends Component {
               <PlansList />
             </div>
           </div>
-          <div class="blue-area"></div>
-          <div class="yellow-area"></div>
-          <div class="green-area"></div>
+          <div className="blue-area"></div>
+          <div className="yellow-area"></div>
+          <div className="green-area"></div>
         </div>
       </div>
     );
